@@ -1,0 +1,112 @@
+nginx=stable # use nginx=development for latest development version
+sudo su -
+add-apt-repository ppa:nginx/$nginx
+apt-get update 
+apt-get install nginx
+
+
+
+aptitude install php5-fpm
+
+Modify /var/www to add scripts directory
+tar up the entire scripts directory and then http://10.10.10.100/scripts/scripts.tar to get it from the windows machine.
+Untar it in /var/www/scripts
+chmod 777 * for all subdirectories as well
+
+Create scripts file in /etc/nginx/sites-available
+server {
+
+        listen   80; ## listen for ipv4; this line is default and implied
+
+        root /var/www/scripts/;
+        index index.php;
+
+        server_name localhost;
+
+        location / {
+                try_files $uri $uri/ index.php;
+        }
+
+        location ~ \.php$ {
+                fastcgi_pass 127.0.0.1:9000;
+                fastcgi_index index.php;
+                include fastcgi_params;
+        }
+
+}
+Then softlink it to /etc/nginx/sites-enabled
+ln -s /etc/nginx/sites-available/scripts scripts
+
+Add the following line to /etc/nginx/fastcgi_params:
+
+#Avi added the following line
+fastcgi_param   SCRIPT_FILENAME $document_root$fastcgi_script_name;
+
+You can add the following in the default file:
+               #fastcgi_param  SCRIPT_FILENAME  /scripts$fastcgi_script_name;
+                fastcgi_param  SCRIPT_FILENAME  /var/www$fastcgi_script_name;
+ 
+which will then look like:
+       # pass the PHP scripts to FastCGI server listening on 127.0.0.1:9000
+        #
+        location ~ \.php$ {
+                fastcgi_pass   127.0.0.1:9000;
+                fastcgi_index  index.php;
+                #fastcgi_param  SCRIPT_FILENAME  /scripts$fastcgi_script_name;
+                fastcgi_param  SCRIPT_FILENAME  /var/www$fastcgi_script_name;
+                include fastcgi_params;
+        }
+
+And then you do not need to add anything to fastcgi_params
+
+You can also add index.php to the /etc/nginx/sites-available/default file:
+
+        location / {
+                root   /var/www/nginx-default;
+                index  index.html index.htm index.php;
+        }
+
+Please notice that I am putting in the directory for the html and php files, in this case /var/www
+
+run the following:
+/etc/init.d/service php5-fpm restart
+/etc/init.d/service nginx restart
+
+
+Important:
+If apt-get install php5-fpm does not work because it cannot find php5-fpm, you need to do the following:
+
+cd /tmp
+apt-get install wget
+wget http://us.archive.ubuntu.com/ubuntu/pool/main/k/krb5/libkrb53_1.6.dfsg.4~beta1-5ubuntu2_i386.deb
+or
+wget http://us.archive.ubuntu.com/ubuntu/pool/main/k/krb5/libkrb53_1.6.dfsg.4~beta1-5ubuntu2_amd64.deb
+if it is amd64
+(wget http://us.archive.ubuntu.com/ubuntu/pool/main/k/krb5/libkrb53_1.6.dfsg.4~beta1-5ubuntu2_i386.deb)
+
+then
+wget http://us.archive.ubuntu.com/ubuntu/pool/main/i/icu/libicu38_3.8-6ubuntu0.2_i386.deb
+or
+wget http://us.archive.ubuntu.com/ubuntu/pool/main/i/icu/libicu38_3.8-6ubuntu0.2_amd64.deb
+if it is 64 bit
+(wget http://us.archive.ubuntu.com/ubuntu/pool/main/i/icu/libicu38_3.8-6ubuntu0.2_i386.deb)
+
+then
+sudo dpkg -i *.deb
+
+
+Then
+sudo echo "deb http://php53.dotdeb.org stable all" >> /etc/apt/sources.list
+sudo apt-get update
+sudo apt-get install php5-cli php5-common php5-suhosin
+sudo apt-get install php5-fpm php5-cgi
+
+sudo /etc/init.d/nginx restart
+sudo /etc/init.d/php5-fpm restart
+
+For debugging:
+sudo tail /var/log/nginx/error.log
+
+
+
+

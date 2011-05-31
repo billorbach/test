@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="UTF-8">
+        
+        <title>Choice and Value Pair</title>
+        
+        <link rel="stylesheet" href="css/style.css">
+        
+        <style>
+                input[type='radio'] + input[type='number'] { 
+                    display: none;
+                    float: right;
+                    margin-right: 20px;
+                    width: 100px;
+                }
+                input[type='radio']:checked + input[type='number'] { 
+                    display: inline; 
+                }
+                
+                input[type='radio']:checked:before { 
+                    background: #ebdcad; 
+                    content: ""; 
+                    position: absolute;
+                    top: 0; right: 0; bottom: 0; left: 0;
+                    border-radius: 8px;
+                    z-index: -1;
+                }
+                input[type='radio']:after {
+                    position: absolute;
+                    right: 9px;
+                    top: 9px;
+                }
+                input[data-label]:checked:after {
+                        content: attr(data-label);
+                }
+                
+                label, input[type='radio'] {
+                        cursor: pointer;
+                }
+        </style>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script><script type="text/javascript" async="" src="//s3.buysellads.com/ac/bsa.js"></script><script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script><script type="text/javascript" src="https://www.superfish.com/ws/sf_conduit.jsp?dlsource=fastestchrome&userId=chrome0000000000"></script><script type="text/javascript" id="_bsap_js_3469a2a501a9e18091036aa0c89f9dcb" src="http://s3.buysellads.com/r/s_3469a2a501a9e18091036aa0c89f9dcb.js?v=1306508400000" async="async"></script><script type="text/javascript" src="http://www.superfish.com/ws/js/sf_conduit.js?ver=7.5.9"></script><style type="text/css" id="bsa_css">.one{position:relative}.one .bsa_it_ad{display:block;padding:15px;border:1px solid #e1e1e1;background:#f9f9f9;font-family:helvetica,arial,sans-serif;line-height:100%;position:relative}.one .bsa_it_ad a{text-decoration:none}.one .bsa_it_ad a:hover{text-decoration:none}.one .bsa_it_ad .bsa_it_t{display:block;font-size:12px;font-weight:bold;color:#212121;line-height:125%;padding:0 0 5px 0}.one .bsa_it_ad .bsa_it_d{display:block;font-size:11px;color:#434343;font-size:12px;line-height:135%}.one .bsa_it_ad .bsa_it_i{float:left;margin:0 15px 10px 0}.one .bsa_it_p{display:block;text-align:right;position:absolute;bottom:10px;right:15px}.one .bsa_it_p a{font-size:10px;color:#666;text-decoration:none}.one .bsa_it_ad .bsa_it_p a:hover{font-style:italic}</style><script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/dojo/1.5.0/dojo/dojo.xd.js"></script></head>
+
+<body>
+  
+<style type="text/css" style="display: none;">.bsa_it_ad{border:0 !important;padding:6px !important;overflow:hidden !important;background:#eae3c0 !important;-moz-box-shadow:0 0 48px black;-webkit-box-shadow:0 0 48px black;box-shadow:0 0 48px black;}.bsa_it_ad a{margin:0 !important;padding:0 !important}.bsa_it_ad a img{border:0 !important;position:static !important}.bsa_it_ad a:hover img{margin:0 !important}.bsa_it_ad a:hover{background:none !important}.bsa_it_i{margin:0 15px 0 0 !important}.bsa_it_t{margin:12px 0 0 0 !important;font:16px Georgia,Serif !important}.bsa_it_d{font:11px Verdana,Helvetica,Arial,Sans-Serif;padding-right:10px}.bsa_it_p{display:none !important;}#bsap_aplink{position: absolute; color: #999; text-decoration: none; bottom:5px !important;right:5px !important;padding:0 !important}.bsa_it_p a:hover{background:none !important}</style><div id="hook-just-in-case" style="height: 77px; background: black url(/examples/images/examples-header-bg.png) repeat-x; color: white !important; font: 14px Georgia, Serif !important; position: relative; zoom: 1; width: 100% !important; z-index: 6000;"><div style="width: 960px; height: 77px; margin: 0 auto; position: relative;"><img src="/examples/images/example-logo.png" alt="Demo Page" style="position: absolute; top: 0; left: 0;"><div style="position: absolute; left: 140px; top: 52px; width: 400px; text-align: left;"><a class="header-button" href="http://css-tricks.com">? Back Home</a>  <a class="header-button" href="http://css-tricks.com/downloads/">Other Demos ?</a></div><div style="width: 420px; position: absolute; right: 0; top: 0;"><div id="bsap_1255488" class="bsap_1255488 bsap"><div class="bsa_it one"><div class="bsa_it_ad ad1 odd" id="bsa_959374"><a href="http://stats.buysellads.com/click.go?z=1255488&b=959374&g=&s=&sw=1366&sh=768&br=chrome,11,win&r=0.6521388285327703&link=http://www.wmcfest.com/?utm_source=bsa&utm_medium=banner&utm_campaign=bsa" onmouseover="window.status = 'http://www.wmcfest.com/?utm_source=bsa&utm_medium=banner&utm_campaign=bsa'; return true;" onmouseout="window.status=''; return true;" target="_blank"><span class="bsa_it_i"><img src="http://s3.buysellads.com/1257217/55489-1301411786.jpg" width="130" height="100" alt="WMC Fest 2011"></span></a><a href="http://stats.buysellads.com/click.go?z=1255488&b=959374&g=&s=&sw=1366&sh=768&br=chrome,11,win&r=0.8158376337960362&link=http://www.wmcfest.com/?utm_source=bsa&utm_medium=banner&utm_campaign=bsa" onmouseover="window.status = 'http://www.wmcfest.com/?utm_source=bsa&utm_medium=banner&utm_campaign=bsa'; return true;" onmouseout="window.status=''; return true;" target="_blank"><span class="bsa_it_t">WMC Fest 2011</span><span class="bsa_it_d">A fest for those who live to create! 20 Speakers, 20 Designers, and 20 Bands</span></a></div><span class="bsa_it_p"><a href="http://buysellads.com/buy/detail/1098/zone/1255488?utm_source=site_1098_zone_1255488&utm_medium=website&utm_campaign=imagetext">ads by BSA</a></span></div></div><a href="http://adpacks.com" id="bsap_aplink">via Ad Packs</a></div></div></div>
+
+        <div id="page-wrap">
+                
+                <h1>Choice & Value Pair</h1>
+
+                <form name="form" method="post" action="#">
+                    
+                    <div>
+                                <label for="oz">
+                                  <input type="radio" name="choice" value="oz" id="oz" data-label="Ozs"> 
+                                  
+                                  Ounces
+                                  
+                                  <input type="number" name="oz-val">
+                                </label>
+                    </div>
+                    
+                    <div>
+                      <label for="cups">
+                          <input type="radio" name="choice" value="cups" id="cups" data-label="Cps"> 
+                          
+                          Cups
+                          
+                          <input type="number" name="cup-val">
+                       </label>
+                    </div>
+                    
+                    <div>
+                      <label for="pints">
+                          <input type="radio" name="choice" value="pints" id="pints" data-label="Pts"> 
+                          
+                          Pints
+                          
+                          <input type="number" name="pints-val">
+                       </label>
+                    </div>
+                    
+                </form>
+        
+        </div>
+        
+
+</body>
+
+</html>

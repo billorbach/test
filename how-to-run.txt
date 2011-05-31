@@ -1,0 +1,42 @@
+all scripts are called from vmconnect, the comment is also available from google document
+
+1.   create master
+
+(a) client clicks ¡°submit¡±,  in vmconnect there should be a base_master.vmx file, the corresponding .vmx file is generated, the
+command   sh   web-create-master1.sh   "master0.000"    "Windows-7_32-bit2.iso"    32
+"master0.000"    is the master  image name
+"Windows-7_32-bit2.iso"  is the iso filename
+32  is the bit number of system
+
+====  web-create-master1.sh  ===  run-script.sh =====web-create-master2.sh===
+note:  make sure the iso file name is correct, because right now we are using a constent value rather than a parameter.
+
+(b) client uses TightVNC viewer to edit and install Windows7 system
+
+(c) user enters  ¡°the number of clones¡±  he/she wants to make  
+http://www.neverware.com/scripts/create_clone.php
+
+(d) client clicks ¡°next¡±,  esxi server executes
+command      sh web-create-clone1.sh  master0.000  3
+master0.000 is the master image name
+3 is the number of vm to be created
+
+
+
+2. edit master
+(a) create a copy of old master image, old name is the first parameter, the new name is the second parameter
+command    sh web-edit-master1.sh master0.000  master0.001
+master0.000 is the old master image name
+master 0.001 is the new master  image name
+
+ 
+(b)change the point of the old clones.
+command   sh web-edit-master3.sh master0.001  3
+master0.001 is the new master image¡¯s name
+3 is the number of vms to be created
+
+
+(3) revert master
+command       sh web-revert-master1.sh   master0.000   3
+master0.000 is the image which client wants go back to.
+3 is the number of clones

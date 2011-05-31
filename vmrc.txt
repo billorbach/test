@@ -1,0 +1,11 @@
+C:\Program Files (x86)\VMware\Infrastructure\Virtual Infrastructure Client\4.0>v
+mware-vmrc -h 192.168.3.5 -u "root" -p "Intern1!" "[Master] master2.1/master2.1.
+vmx"
+
+C:\Program Files (x86)\VMware\Infrastructure\Virtual Infrastructure Client\4.0>v
+mware-vmrc -h 192.168.3.5 -u "root" -p "Intern1!" "[Master] master2.2/master2.2.
+vmx"
+
+C:\vmrc3>vmrc -h 192.168.3.5 -u "root" -p "Intern1!" "[Master] master8.0/master8
+.0.vmx"
+

@@ -1,0 +1,13 @@
+Master Name= master0.000
+Storage Type= Storage
+OS= Windows7 (32) bit
+Processors= 1
+Memory= 2GB
+Number of Network= 1
+Network Interface= vmxnet3
+Scsi Controller= lsisas1068
+Virtual Disk = create_new
+Virtual Disk Size= 40GB
+Virtual Disk Mode= persistent
+Existing Virtual Disk= 
+Data Written 2

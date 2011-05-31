@@ -1,0 +1,89 @@
+2010-11-02 13:59:01	ssh root@192.168.3.5 vim-cmd vmsvc/power.reset 688
+2010-11-02 13:59:11	ssh root@192.168.3.5 vim-cmd vmsvc/get.summary 688|grep 'ipAddress'|awk '{print$3}'|sed 's/[^"]*"\([^"]*\).*/\1/'> /home/jeos/link/link_ip.txt
+2010-11-02 13:59:14	ssh root@192.168.3.5 vim-cmd vmsvc/get.summary 688|grep 'powerState'|awk '{print$3}'|sed 's/[^"]*"\([^"]*\).*/\1/'>  /home/jeos/link/link_state.txt
+2010-11-02 13:59:26	ssh root@192.168.3.5 vim-cmd vmsvc/get.summary 688|grep 'ipAddress'|awk '{print$3}'|sed 's/[^"]*"\([^"]*\).*/\1/'> /home/jeos/link/link_ip.txt
+2010-11-02 13:59:29	ssh root@192.168.3.5 vim-cmd vmsvc/get.summary 688|grep 'powerState'|awk '{print$3}'|sed 's/[^"]*"\([^"]*\).*/\1/'>  /home/jeos/link/link_state.txt
+2010-11-02 13:59:42	ssh root@192.168.3.5 vim-cmd vmsvc/get.summary 688|grep 'ipAddress'|awk '{print$3}'|sed 's/[^"]*"\([^"]*\).*/\1/'> /home/jeos/link/link_ip.txt
+2010-11-02 13:59:45	ssh root@192.168.3.5 vim-cmd vmsvc/get.summary 688|grep 'powerState'|awk '{print$3}'|sed 's/[^"]*"\([^"]*\).*/\1/'>  /home/jeos/link/link_state.txt
+2010-11-02 13:59:58	ssh root@192.168.3.5 vim-cmd vmsvc/get.summary 688|grep 'ipAddress'|awk '{print$3}'|sed 's/[^"]*"\([^"]*\).*/\1/'> /home/jeos/link/link_ip.txt
+2010-11-02 14:00:00	ssh root@192.168.3.5 vim-cmd vmsvc/get.summary 688|grep 'powerState'|awk '{print$3}'|sed 's/[^"]*"\([^"]*\).*/\1/'>  /home/jeos/link/link_state.txt
+2010-11-02 14:27:04	ssh root@192.168.3.5 vim-cmd vmsvc/power.reset 672
+2010-11-02 14:27:13	ssh root@192.168.3.5 vim-cmd vmsvc/get.summary 672|grep 'ipAddress'|awk '{print$3}'|sed 's/[^"]*"\([^"]*\).*/\1/'> /home/jeos/link/link_ip.txt
+2010-11-02 14:27:16	ssh root@192.168.3.5 vim-cmd vmsvc/get.summary 672|grep 'powerState'|awk '{print$3}'|sed 's/[^"]*"\([^"]*\).*/\1/'>  /home/jeos/link/link_state.txt
+2010-11-02 14:27:28	ssh root@192.168.3.5 vim-cmd vmsvc/get.summary 672|grep 'ipAddress'|awk '{print$3}'|sed 's/[^"]*"\([^"]*\).*/\1/'> /home/jeos/link/link_ip.txt
+2010-11-02 14:27:31	ssh root@192.168.3.5 vim-cmd vmsvc/get.summary 672|grep 'powerState'|awk '{print$3}'|sed 's/[^"]*"\([^"]*\).*/\1/'>  /home/jeos/link/link_state.txt
+2010-11-02 14:27:44	ssh root@192.168.3.5 vim-cmd vmsvc/get.summary 672|grep 'ipAddress'|awk '{print$3}'|sed 's/[^"]*"\([^"]*\).*/\1/'> /home/jeos/link/link_ip.txt
+2010-11-02 14:27:47	ssh root@192.168.3.5 vim-cmd vmsvc/get.summary 672|grep 'powerState'|awk '{print$3}'|sed 's/[^"]*"\([^"]*\).*/\1/'>  /home/jeos/link/link_state.txt
+2010-11-02 14:27:59	ssh root@192.168.3.5 vim-cmd vmsvc/get.summary 672|grep 'ipAddress'|awk '{print$3}'|sed 's/[^"]*"\([^"]*\).*/\1/'> /home/jeos/link/link_ip.txt
+2010-11-02 14:28:02	ssh root@192.168.3.5 vim-cmd vmsvc/get.summary 672|grep 'powerState'|awk '{print$3}'|sed 's/[^"]*"\([^"]*\).*/\1/'>  /home/jeos/link/link_state.txt
+2010-11-02 15:23:06	ssh root@192.168.3.5 vim-cmd vmsvc/power.reset 688
+2010-11-02 15:23:15	ssh root@192.168.3.5 vim-cmd vmsvc/get.summary 688|grep 'ipAddress'|awk '{print$3}'|sed 's/[^"]*"\([^"]*\).*/\1/'> /home/jeos/link/link_ip.txt
+2010-11-02 15:23:17	ssh root@192.168.3.5 vim-cmd vmsvc/get.summary 688|grep 'powerState'|awk '{print$3}'|sed 's/[^"]*"\([^"]*\).*/\1/'>  /home/jeos/link/link_state.txt
+2010-11-02 15:23:30	ssh root@192.168.3.5 vim-cmd vmsvc/get.summary 688|grep 'ipAddress'|awk '{print$3}'|sed 's/[^"]*"\([^"]*\).*/\1/'> /home/jeos/link/link_ip.txt
+2010-11-02 15:23:33	ssh root@192.168.3.5 vim-cmd vmsvc/get.summary 688|grep 'powerState'|awk '{print$3}'|sed 's/[^"]*"\([^"]*\).*/\1/'>  /home/jeos/link/link_state.txt
+2010-11-02 15:23:46	ssh root@192.168.3.5 vim-cmd vmsvc/get.summary 688|grep 'ipAddress'|awk '{print$3}'|sed 's/[^"]*"\([^"]*\).*/\1/'> /home/jeos/link/link_ip.txt
+2010-11-02 15:23:49	ssh root@192.168.3.5 vim-cmd vmsvc/get.summary 688|grep 'powerState'|awk '{print$3}'|sed 's/[^"]*"\([^"]*\).*/\1/'>  /home/jeos/link/link_state.txt
+2010-11-02 15:24:01	ssh root@192.168.3.5 vim-cmd vmsvc/get.summary 688|grep 'ipAddress'|awk '{print$3}'|sed 's/[^"]*"\([^"]*\).*/\1/'> /home/jeos/link/link_ip.txt
+2010-11-02 15:24:04	ssh root@192.168.3.5 vim-cmd vmsvc/get.summary 688|grep 'powerState'|awk '{print$3}'|sed 's/[^"]*"\([^"]*\).*/\1/'>  /home/jeos/link/link_state.txt
+2010-11-02 16:11:09	ssh root@192.168.3.5 vim-cmd vmsvc/power.reset 672
+2010-11-02 16:11:17	ssh root@192.168.3.5 vim-cmd vmsvc/get.summary 672|grep 'ipAddress'|awk '{print$3}'|sed 's/[^"]*"\([^"]*\).*/\1/'> /home/jeos/link/link_ip.txt
+2010-11-02 16:11:20	ssh root@192.168.3.5 vim-cmd vmsvc/get.summary 672|grep 'powerState'|awk '{print$3}'|sed 's/[^"]*"\([^"]*\).*/\1/'>  /home/jeos/link/link_state.txt
+2010-11-02 16:11:32	ssh root@192.168.3.5 vim-cmd vmsvc/get.summary 672|grep 'ipAddress'|awk '{print$3}'|sed 's/[^"]*"\([^"]*\).*/\1/'> /home/jeos/link/link_ip.txt
+2010-11-02 16:11:35	ssh root@192.168.3.5 vim-cmd vmsvc/get.summary 672|grep 'powerState'|awk '{print$3}'|sed 's/[^"]*"\([^"]*\).*/\1/'>  /home/jeos/link/link_state.txt
+2010-11-02 16:11:48	ssh root@192.168.3.5 vim-cmd vmsvc/get.summary 672|grep 'ipAddress'|awk '{print$3}'|sed 's/[^"]*"\([^"]*\).*/\1/'> /home/jeos/link/link_ip.txt
+2010-11-02 16:11:50	ssh root@192.168.3.5 vim-cmd vmsvc/get.summary 672|grep 'powerState'|awk '{print$3}'|sed 's/[^"]*"\([^"]*\).*/\1/'>  /home/jeos/link/link_state.txt
+2010-11-02 16:12:03	ssh root@192.168.3.5 vim-cmd vmsvc/get.summary 672|grep 'ipAddress'|awk '{print$3}'|sed 's/[^"]*"\([^"]*\).*/\1/'> /home/jeos/link/link_ip.txt
+2010-11-02 16:12:06	ssh root@192.168.3.5 vim-cmd vmsvc/get.summary 672|grep 'powerState'|awk '{print$3}'|sed 's/[^"]*"\([^"]*\).*/\1/'>  /home/jeos/link/link_state.txt
+2010-11-02 16:21:02	ssh root@192.168.3.5 vim-cmd vmsvc/power.reset 688
+2010-11-02 16:21:08	ssh root@192.168.3.5 vim-cmd vmsvc/get.summary 688|grep 'ipAddress'|awk '{print$3}'|sed 's/[^"]*"\([^"]*\).*/\1/'> /home/jeos/link/link_ip.txt
+2010-11-02 16:21:11	ssh root@192.168.3.5 vim-cmd vmsvc/get.summary 688|grep 'powerState'|awk '{print$3}'|sed 's/[^"]*"\([^"]*\).*/\1/'>  /home/jeos/link/link_state.txt
+2010-11-02 16:21:24	ssh root@192.168.3.5 vim-cmd vmsvc/get.summary 688|grep 'ipAddress'|awk '{print$3}'|sed 's/[^"]*"\([^"]*\).*/\1/'> /home/jeos/link/link_ip.txt
+2010-11-02 16:21:27	ssh root@192.168.3.5 vim-cmd vmsvc/get.summary 688|grep 'powerState'|awk '{print$3}'|sed 's/[^"]*"\([^"]*\).*/\1/'>  /home/jeos/link/link_state.txt
+2010-11-02 16:21:40	ssh root@192.168.3.5 vim-cmd vmsvc/get.summary 688|grep 'ipAddress'|awk '{print$3}'|sed 's/[^"]*"\([^"]*\).*/\1/'> /home/jeos/link/link_ip.txt
+2010-11-02 16:21:42	ssh root@192.168.3.5 vim-cmd vmsvc/get.summary 688|grep 'powerState'|awk '{print$3}'|sed 's/[^"]*"\([^"]*\).*/\1/'>  /home/jeos/link/link_state.txt
+2010-11-02 16:21:55	ssh root@192.168.3.5 vim-cmd vmsvc/get.summary 688|grep 'ipAddress'|awk '{print$3}'|sed 's/[^"]*"\([^"]*\).*/\1/'> /home/jeos/link/link_ip.txt
+2010-11-02 16:21:58	ssh root@192.168.3.5 vim-cmd vmsvc/get.summary 688|grep 'powerState'|awk '{print$3}'|sed 's/[^"]*"\([^"]*\).*/\1/'>  /home/jeos/link/link_state.txt
+2010-11-02 17:43:05	ssh root@192.168.3.5 vim-cmd vmsvc/power.reset 672
+2010-11-02 17:43:11	ssh root@192.168.3.5 vim-cmd vmsvc/get.summary 672|grep 'ipAddress'|awk '{print$3}'|sed 's/[^"]*"\([^"]*\).*/\1/'> /home/jeos/link/link_ip.txt
+2010-11-02 17:43:14	ssh root@192.168.3.5 vim-cmd vmsvc/get.summary 672|grep 'powerState'|awk '{print$3}'|sed 's/[^"]*"\([^"]*\).*/\1/'>  /home/jeos/link/link_state.txt
+2010-11-02 17:43:26	ssh root@192.168.3.5 vim-cmd vmsvc/get.summary 672|grep 'ipAddress'|awk '{print$3}'|sed 's/[^"]*"\([^"]*\).*/\1/'> /home/jeos/link/link_ip.txt
+2010-11-02 17:43:29	ssh root@192.168.3.5 vim-cmd vmsvc/get.summary 672|grep 'powerState'|awk '{print$3}'|sed 's/[^"]*"\([^"]*\).*/\1/'>  /home/jeos/link/link_state.txt
+2010-11-02 17:43:42	ssh root@192.168.3.5 vim-cmd vmsvc/get.summary 672|grep 'ipAddress'|awk '{print$3}'|sed 's/[^"]*"\([^"]*\).*/\1/'> /home/jeos/link/link_ip.txt
+2010-11-02 17:43:44	ssh root@192.168.3.5 vim-cmd vmsvc/get.summary 672|grep 'powerState'|awk '{print$3}'|sed 's/[^"]*"\([^"]*\).*/\1/'>  /home/jeos/link/link_state.txt
+2010-11-02 17:43:57	ssh root@192.168.3.5 vim-cmd vmsvc/get.summary 672|grep 'ipAddress'|awk '{print$3}'|sed 's/[^"]*"\([^"]*\).*/\1/'> /home/jeos/link/link_ip.txt
+2010-11-02 17:44:00	ssh root@192.168.3.5 vim-cmd vmsvc/get.summary 672|grep 'powerState'|awk '{print$3}'|sed 's/[^"]*"\([^"]*\).*/\1/'>  /home/jeos/link/link_state.txt
+2010-11-02 17:56:07	ssh root@192.168.3.5 vim-cmd vmsvc/power.reset 688
+2010-11-02 17:56:12	ssh root@192.168.3.5 vim-cmd vmsvc/get.summary 688|grep 'ipAddress'|awk '{print$3}'|sed 's/[^"]*"\([^"]*\).*/\1/'> /home/jeos/link/link_ip.txt
+2010-11-02 17:56:15	ssh root@192.168.3.5 vim-cmd vmsvc/get.summary 688|grep 'powerState'|awk '{print$3}'|sed 's/[^"]*"\([^"]*\).*/\1/'>  /home/jeos/link/link_state.txt
+2010-11-02 17:56:28	ssh root@192.168.3.5 vim-cmd vmsvc/get.summary 688|grep 'ipAddress'|awk '{print$3}'|sed 's/[^"]*"\([^"]*\).*/\1/'> /home/jeos/link/link_ip.txt
+2010-11-02 17:56:31	ssh root@192.168.3.5 vim-cmd vmsvc/get.summary 688|grep 'powerState'|awk '{print$3}'|sed 's/[^"]*"\([^"]*\).*/\1/'>  /home/jeos/link/link_state.txt
+2010-11-02 17:56:44	ssh root@192.168.3.5 vim-cmd vmsvc/get.summary 688|grep 'ipAddress'|awk '{print$3}'|sed 's/[^"]*"\([^"]*\).*/\1/'> /home/jeos/link/link_ip.txt
+2010-11-02 17:56:46	ssh root@192.168.3.5 vim-cmd vmsvc/get.summary 688|grep 'powerState'|awk '{print$3}'|sed 's/[^"]*"\([^"]*\).*/\1/'>  /home/jeos/link/link_state.txt
+2010-11-02 17:56:59	ssh root@192.168.3.5 vim-cmd vmsvc/get.summary 688|grep 'ipAddress'|awk '{print$3}'|sed 's/[^"]*"\([^"]*\).*/\1/'> /home/jeos/link/link_ip.txt
+2010-11-02 17:57:00	ssh root@192.168.3.5 vim-cmd vmsvc/power.reset 672
+2010-11-02 17:57:02	ssh root@192.168.3.5 vim-cmd vmsvc/get.summary 688|grep 'powerState'|awk '{print$3}'|sed 's/[^"]*"\([^"]*\).*/\1/'>  /home/jeos/link/link_state.txt
+2010-11-02 17:57:15	ssh root@192.168.3.5 vim-cmd vmsvc/get.summary 672|grep 'ipAddress'|awk '{print$3}'|sed 's/[^"]*"\([^"]*\).*/\1/'> /home/jeos/link/link_ip.txt
+2010-11-02 17:57:17	ssh root@192.168.3.5 vim-cmd vmsvc/get.summary 672|grep 'powerState'|awk '{print$3}'|sed 's/[^"]*"\([^"]*\).*/\1/'>  /home/jeos/link/link_state.txt
+2010-11-02 17:57:30	ssh root@192.168.3.5 vim-cmd vmsvc/get.summary 672|grep 'ipAddress'|awk '{print$3}'|sed 's/[^"]*"\([^"]*\).*/\1/'> /home/jeos/link/link_ip.txt
+2010-11-02 17:57:33	ssh root@192.168.3.5 vim-cmd vmsvc/get.summary 672|grep 'powerState'|awk '{print$3}'|sed 's/[^"]*"\([^"]*\).*/\1/'>  /home/jeos/link/link_state.txt
+2010-11-02 17:57:45	ssh root@192.168.3.5 vim-cmd vmsvc/get.summary 672|grep 'ipAddress'|awk '{print$3}'|sed 's/[^"]*"\([^"]*\).*/\1/'> /home/jeos/link/link_ip.txt
+2010-11-02 17:57:48	ssh root@192.168.3.5 vim-cmd vmsvc/get.summary 672|grep 'powerState'|awk '{print$3}'|sed 's/[^"]*"\([^"]*\).*/\1/'>  /home/jeos/link/link_state.txt
+2010-11-02 17:58:01	ssh root@192.168.3.5 vim-cmd vmsvc/get.summary 672|grep 'ipAddress'|awk '{print$3}'|sed 's/[^"]*"\([^"]*\).*/\1/'> /home/jeos/link/link_ip.txt
+2010-11-02 17:58:03	ssh root@192.168.3.5 vim-cmd vmsvc/get.summary 672|grep 'powerState'|awk '{print$3}'|sed 's/[^"]*"\([^"]*\).*/\1/'>  /home/jeos/link/link_state.txt
+2010-11-02 17:58:19	ssh root@192.168.3.5 vim-cmd vmsvc/get.summary 672|grep 'ipAddress'|awk '{print$3}'|sed 's/[^"]*"\([^"]*\).*/\1/'> /home/jeos/link/link_ip.txt
+2010-11-02 17:58:21	ssh root@192.168.3.5 vim-cmd vmsvc/get.summary 672|grep 'powerState'|awk '{print$3}'|sed 's/[^"]*"\([^"]*\).*/\1/'>  /home/jeos/link/link_state.txt
+2010-11-02 17:58:34	ssh root@192.168.3.5 vim-cmd vmsvc/get.summary 672|grep 'ipAddress'|awk '{print$3}'|sed 's/[^"]*"\([^"]*\).*/\1/'> /home/jeos/link/link_ip.txt
+2010-11-02 17:58:37	ssh root@192.168.3.5 vim-cmd vmsvc/get.summary 672|grep 'powerState'|awk '{print$3}'|sed 's/[^"]*"\([^"]*\).*/\1/'>  /home/jeos/link/link_state.txt
+2010-11-02 17:58:49	ssh root@192.168.3.5 vim-cmd vmsvc/get.summary 672|grep 'ipAddress'|awk '{print$3}'|sed 's/[^"]*"\([^"]*\).*/\1/'> /home/jeos/link/link_ip.txt
+2010-11-02 17:58:52	ssh root@192.168.3.5 vim-cmd vmsvc/get.summary 672|grep 'powerState'|awk '{print$3}'|sed 's/[^"]*"\([^"]*\).*/\1/'>  /home/jeos/link/link_state.txt
+2010-11-02 17:59:03	ssh root@192.168.3.5 vim-cmd vmsvc/power.reset 688
+2010-11-02 17:59:04	ssh root@192.168.3.5 vim-cmd vmsvc/get.summary 672|grep 'ipAddress'|awk '{print$3}'|sed 's/[^"]*"\([^"]*\).*/\1/'> /home/jeos/link/link_ip.txt
+2010-11-02 17:59:07	ssh root@192.168.3.5 vim-cmd vmsvc/get.summary 672|grep 'powerState'|awk '{print$3}'|sed 's/[^"]*"\([^"]*\).*/\1/'>  /home/jeos/link/link_state.txt
+2010-11-02 17:59:20	ssh root@192.168.3.5 vim-cmd vmsvc/get.summary 688|grep 'ipAddress'|awk '{print$3}'|sed 's/[^"]*"\([^"]*\).*/\1/'> /home/jeos/link/link_ip.txt
+2010-11-02 17:59:23	ssh root@192.168.3.5 vim-cmd vmsvc/get.summary 688|grep 'powerState'|awk '{print$3}'|sed 's/[^"]*"\([^"]*\).*/\1/'>  /home/jeos/link/link_state.txt
+2010-11-02 17:59:35	ssh root@192.168.3.5 vim-cmd vmsvc/get.summary 688|grep 'ipAddress'|awk '{print$3}'|sed 's/[^"]*"\([^"]*\).*/\1/'> /home/jeos/link/link_ip.txt
+2010-11-02 17:59:38	ssh root@192.168.3.5 vim-cmd vmsvc/get.summary 688|grep 'powerState'|awk '{print$3}'|sed 's/[^"]*"\([^"]*\).*/\1/'>  /home/jeos/link/link_state.txt
+2010-11-02 17:59:51	ssh root@192.168.3.5 vim-cmd vmsvc/get.summary 688|grep 'ipAddress'|awk '{print$3}'|sed 's/[^"]*"\([^"]*\).*/\1/'> /home/jeos/link/link_ip.txt
+2010-11-02 17:59:54	ssh root@192.168.3.5 vim-cmd vmsvc/get.summary 688|grep 'powerState'|awk '{print$3}'|sed 's/[^"]*"\([^"]*\).*/\1/'>  /home/jeos/link/link_state.txt
+2010-11-02 18:00:06	ssh root@192.168.3.5 vim-cmd vmsvc/get.summary 688|grep 'ipAddress'|awk '{print$3}'|sed 's/[^"]*"\([^"]*\).*/\1/'> /home/jeos/link/link_ip.txt
+2010-11-02 18:00:09	ssh root@192.168.3.5 vim-cmd vmsvc/get.summary 688|grep 'powerState'|awk '{print$3}'|sed 's/[^"]*"\([^"]*\).*/\1/'>  /home/jeos/link/link_state.txt

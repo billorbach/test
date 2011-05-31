@@ -1,0 +1,706 @@
+/*********************************************************************************
+## GLOBAL
+*********************************************************************************/
+body {
+	margin: 0;
+	padding: 0;
+	width: 1000px;
+	font: 11px verdana;
+	color: #000;
+	overflow-x:hidden;
+}
+
+form, h1, h2, h3, h4, table, th, tr, td {
+	margin: 0;
+	padding: 0;
+}
+
+div#appLogo {
+	width: 1000px;
+	height: 38px;
+}
+
+
+.txt_css
+{
+
+
+
+
+}
+
+h1#dashboardSpyLogo {
+	background: url(images/logo.jpg) no-repeat 0 0;
+	width: 218px;
+	height: 32px;
+	float: left;
+}
+
+h1 {
+	text-indent: -5000px;
+}
+
+h2 {
+	font: bold 16px verdana;
+	color: #173E79;
+}
+
+h3 {
+	font: bold 11px verdana;
+	color: #000;
+}
+
+#topBar {	
+	width: 1000px;
+	height: 25px;
+	border-bottom: 3px solid #c2c2c2;
+	margin: 0;
+	padding: 0;
+}
+
+#titleBar {
+	width: 1000px;
+	padding: 13px 0 20px 52px;
+}
+
+
+/*********************************************************************************
+## LINKS
+*********************************************************************************/
+a {
+	color: #000;
+}
+
+
+/*********************************************************************************
+## MAIN NAVIGATION
+*********************************************************************************/
+ul#mainNav {
+	margin: 0 183px 0 5px;
+	padding: 6px 0 0 0;	
+	list-style: none;
+	width: 486px;
+	height: 19px;
+	float: left;
+}
+
+ul#mainNav a {
+	font: 11px verdana;
+	color: #333;
+	text-decoration: none;	
+}
+
+ul#mainNav li {
+	height: 19px;
+	float: left;
+	background: #E5E5E5 url(images/tabOff.jpg) no-repeat top right;
+	margin-right: 1px;
+	text-indent: 9px;
+	padding-top: 3px;
+	padding-right: 13px;
+}
+
+
+/*********************************************************************************
+## MAIN NAVIGATION ON-STATE
+*********************************************************************************/
+body#dashboard #nav_dashboard,
+body#deal #nav_deal,
+body#brokers #nav_brokers,
+body#referralNetwork #nav_referralNetwork,
+body#admin #nav_admin {
+	background: #BABAE6 url(images/tabOn.jpg) no-repeat top right;
+}
+
+
+/*********************************************************************************
+## SEARCH UTILITY
+*********************************************************************************/
+#searchUtil {
+	width: 213x;
+	float: left;
+}
+
+#searchUtil #searchLabel {
+	font-weight: bold;
+	color: #666;
+	margin-right: 7px;
+	padding-top: 7px;
+}
+
+#searchUtil span {
+	float: left;
+}
+
+.magnify {
+	background: url(images/magnify.gif) no-repeat 1px 0;
+	width: 20px;
+	height: 25px;
+	margin-left: 4px;
+}
+
+
+/*********************************************************************************
+## HELP LINK
+*********************************************************************************/
+ul#utilNav {
+	width: 31px;
+	height: 25px;
+	list-style: none;
+	float: left;
+	margin: 0 0 0 21px;
+	padding: 7px 0 0 0;
+}
+
+ul#utilNav a {
+	font: bold 11px verdana;
+	color: #666;	
+	text-decoration: underline;
+}
+
+
+/*********************************************************************************
+## TITLE BAR
+*********************************************************************************/
+span#userName {
+	float: left;
+	padding-left: 42px;
+}
+
+span#pageTitle {
+	float: left;
+	padding: 3px 0 0 10px;
+}
+
+#pageContent {
+	width: 1000px;
+	height:auto;
+}
+
+
+/*********************************************************************************
+## PAGE CONTENT:  DASHBOARD [COLUMN LAYOUT]
+*********************************************************************************/
+#dashboard #pageContent {
+	height: 487px;
+	padding-left: 5px;
+	margin: 0 0 1px 0;
+}
+
+#portletColumn1,
+#portletColumn2 {
+	margin-right: 7px;
+}
+
+#portletColumn1,
+#portletColumn3 {
+	width: 245px;
+	float: left;
+}
+
+#portletColumn2 {
+	width: 490px;
+	float: left;	
+}
+
+#portletColumn1,
+#portletColumn2,
+#portletColumn3 {	
+	height: auto;
+	vertical-align: top;
+}
+
+
+/*********************************************************************************
+## PAGE CONTENT:  DASHBOARD [PORTLETS]
+*********************************************************************************/
+#dashboard #pageContent h4 {
+	font: bold 10px verdana;
+	height: 15px;
+	text-indent: -1px;
+	float: left;
+	padding-top: 1px;
+}
+
+.portletHeader {
+	height: 15px;
+}
+.portletHeader2{
+ background-color:#9d3363;
+font: bold 10px verdana;
+text-indent: -1px;
+color:#FFFFFF;
+width:464px; 
+
+height:15px;
+ float:left;
+}
+.portletHeader3{
+ background-color:#9d3363;
+font: bold 10px verdana;
+text-indent: -1px;
+color:#FFFFFF;
+width:463px; 
+
+height:15px;
+ float:left;
+}
+.portletContent table {
+	font: 9px verdana;
+	color: #000;
+	/*table-layout: fixed;*/
+}
+
+.portletContent .totalRow {
+	font-weight: bold;
+}
+
+
+/*********************************************************************************
+## PAGE CONTENT:  DASHBOARD [SMALL PORTLETS]
+*********************************************************************************/
+.portletSmall h4 {
+	width: 224px;
+	background-color: #7676CE;
+	color: #fff;
+}
+
+.portletSmall .portletContent {
+	border: 1px solid #CBCBCB;
+	width: 230px;
+	margin-bottom: 10px;
+	padding: 4px;
+}
+
+.portletSmall2
+{
+
+width: 230px;
+	margin-bottom: 10px;
+}
+.portletSmall .portletContent table {
+	width: 230px;
+}
+
+.portletSmall .portletContent table th {
+	background-color: #BABAE6;
+	text-align: left;
+	padding: 3px 0;
+}
+
+.portletSmall .portletContent table td {
+	padding-top: 3px;
+	padding-bottom: 3px;
+	vertical-align: top;
+}
+
+.portletSmall .portletContent table td img {
+	padding-top: 3px;
+	padding-bottom: 3px;
+	vertical-align: middle;
+}
+
+.portletSmall .portletContent table .alternateRow {
+	background-color: #EEEEF9;
+}
+
+.portletSmall .portletContentScroll {
+	width: 213px;
+	overflow-y: scroll;
+}
+
+.portletSmall .portletContentScroll table {
+	width: 213px;
+}
+
+.porletSmallRow .portletLeft {
+	float: left;
+}
+
+.porletSmallRow .portletRight {
+	float: right;
+}
+
+.portletSmall .leftCorner {
+	background-image:url(images/purpleLTcnr.gif);
+	width: 8px;
+	height: 15px;
+}
+
+.portletSmall .rightCorner {
+	background-image:url(images/purpleRTcnr.gif);
+	width: 8px;
+	height: 15px;
+}
+
+
+/*********************************************************************************
+## PAGE CONTENT:  DASHBOARD [LARGE PORTLETS]
+*********************************************************************************/
+.portletLarge h4 {
+	width: 458px;
+	background-color: #9D3363;
+	color: #fff;
+	
+}
+
+.portletLarge .portletContent {
+	/*border: 1px solid #CBCBCB;*/
+	width: 458px;
+	margin-bottom: 10px;
+	
+}
+ .tab1
+ {
+ border-bottom: 1px solid #CBCBCB;
+border-left: 1px solid #CBCBCB;
+border-right: 1px solid #CBCBCB;
+ 
+ }
+.portletLarge .portletContent table {
+	width: 460px;
+}
+
+.portletLarge .portletContent table th {
+	background-color: #E6CCD8;
+	text-align: left;
+	padding: 3px 0;
+}
+
+.portletLarge .portletContent table td {
+	padding-top: 3px;
+	padding-bottom: 3px;
+	vertical-align: top;
+}
+
+.portletLarge .portletContent table td img {
+	padding-top: 3px;
+	padding-bottom: 3px;
+	vertical-align: middle;
+}
+
+.portletLarge .portletContent table .alternateRow {
+	background-color: #F5EAEF;
+}
+
+.portletLarge .portletContentScroll {
+	width: 458px;
+	overflow-y: scroll;
+}
+
+.portletLarge .portletContentScroll table {
+	width: 459px;
+}
+
+.portletLarge .leftCorner {
+	background: url(images/redLTcnr.gif) 0 0;
+	width: 8px;
+	height: 15px;
+}
+
+.portletLarge .rightCorner {
+	background: url(images/redRTcnr.gif) 0 0;
+	width: 8px;
+	height: 15px;
+}
+
+
+/*********************************************************************************
+## PAGE CONTENT:  DASHBOARD [PORTLET HEIGHTS]
+*********************************************************************************/
+#dealsByStage .portletContent {
+	height: 196px;
+}
+
+#dealsByStage .portletContent div.image {
+	text-align: center;
+}
+
+#conversionRates .portletContent {
+	height: 121px;
+}
+
+#cycleTimes .portletContent {
+	height: 102px;
+}
+
+#fundings .portletContent {
+	height: 120px;
+}
+
+#dealDisplay .portletContent {
+	height: auto;
+}
+
+#dealDisplay .portletContentScroll {
+	height: 265px;
+}
+
+#alerts .portletContent {
+	height: 120px;
+}
+
+#alerts .portletContentScroll {
+	height: 90px;
+}
+
+#portfolio .portletContent {
+	height: 196px;
+}
+
+#portfolio .portletContent div.image {
+	text-align: center;
+}
+
+#recentActivities .portletContent {
+	height: 260px;
+}
+
+#recentActivities .portletContentScroll {
+	height: 240px;
+}
+
+
+/*********************************************************************************
+## PAGE CONTENT:  DASHBOARD [PORTLETS - CONVERSION RATES & CYCLE TIMES TABLE]
+*********************************************************************************/
+#conversionRates .listingColumn,
+#cycleTimes .listingColumn {
+	width: 80px;
+	padding-left: 2px;	
+}
+
+#conversionRates .bdoColumn,
+#cycleTimes .bdoColumn {
+	width: 37px;	
+	padding-left: 5px;
+}
+
+#conversionRates .bdoLightsColumn,
+#cycleTimes .bdoLightsColumn {
+	width: 17px;
+}
+
+#conversionRates .teamColumn, 
+#cycleTimes .teamColumn {
+	width: 37px;
+	padding-left: 3px;
+}
+
+#conversionRates .teamLightsColumn,
+#cycleTimes .teamLightsColumn {
+	width: 17px;
+}
+
+#conversionRates .targetColumn,
+#cycleTimes .targetColumn {
+	width: 42px;
+	padding-left: 3px;
+}
+
+
+/*********************************************************************************
+## PAGE CONTENT:  DASHBOARD [PORTLETS - FUNDINGS TABLE]
+*********************************************************************************/
+#fundings .listingColumn {
+	width: 59px;
+	padding-left: 2px;
+}
+
+#fundings .bdoColumn {
+	width: 70px;	
+}
+
+#fundings .bdoLightsColumn {
+	width: 13px;
+}
+
+#fundings .teamColumn {
+	width: 80px;
+}
+
+#fundings .teamLightsColumn {
+	width: 8px;
+}
+
+
+/*********************************************************************************
+## PAGE CONTENT:  DASHBOARD [PORTLETS - ALERTS TABLE]
+*********************************************************************************/
+#alerts .portletContent .mostRecentColumn {
+	width: 205px;
+	padding-left: 2px;	
+}
+
+#alerts .portletContent .mostRecentLightsColumn {
+	width: 25px;
+	padding-left: 7px;
+}
+
+#alerts .portletContentScroll .mostRecentLightsColumn {
+	width: 8px;	
+	padding-left: 0;
+}
+
+
+/*********************************************************************************
+## PAGE CONTENT:  DASHBOARD [PORTLETS - DEAL DISPLAY TABLE]
+*********************************************************************************/
+#dealDisplay #viewDeals {
+	width: 100%;
+	text-align: right;
+	font: 10px verdana;
+	color: #000;
+}
+
+#dealDisplay select {
+	font: 10px verdana;
+	color: #000;
+	width: 98px;
+	margin-top:7px;
+}
+
+#dealDisplay #subNav {
+	width: 100%;
+	display: block;	
+	margin-top: 7px;
+	margin-bottom: 9px;
+}
+
+#dealDisplay #subNav ul {
+	list-style: none;
+	margin: 0;
+}
+
+#dealDisplay #subNav li {
+	float: left;
+}
+
+#dealDisplay #subNav a {
+	text-decoration: none;
+	font: 10px verdana;
+	color: #000;
+}
+
+#dealDisplay #subNav a.onstate {
+	text-decoration: none;
+	color: #993366;
+	font-weight: bold;
+}
+
+#dealDisplay .portletContent .dealIdColumn {
+	width: 55px;
+	padding-left: 2px;	
+}
+
+#dealDisplay .portletContent .nameColumn {
+	width: 136px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	padding-left: 5px;
+}
+
+#dealDisplay .portletContent .amountColumn {
+	width: 111px;
+	padding-left: 5px;
+}
+
+#dealDisplay .portletContent .typeColumn {
+	width: 70px;
+	padding-left: 5px;
+}
+
+#dealDisplay .portletContent .lastActivity {
+	width: 108px;
+	padding-left: 5px;
+}
+
+#dealDisplay .portletContentScroll .lastActivity {
+	width: 91px;
+	padding-left: 5px;
+}
+
+
+/*********************************************************************************
+## PAGE CONTENT:  DASHBOARD [PORTLETS - RECENT ACTIVITIES (7 DAYS) TABLE]
+*********************************************************************************/
+#recentActivities .dealIdColumn {
+	width: 60px;
+	padding-left: 2px;	
+}
+
+#recentActivities .descriptionColumn {
+	width: 170px;
+	padding-left: 5px;
+}
+
+#recentActivities .portletContentScroll .descriptionColumn {
+	width: 153px;
+	padding-left: 5px;
+}
+
+
+/*********************************************************************************
+## FOOTER
+*********************************************************************************/
+#footer {
+	width: 1000px;
+	height: 44px;
+	background-color: #E7EBF1;
+	clear: both;
+}
+
+h1#footerLogo {
+	background: url(images/my-logo.gif) no-repeat 7px 5px;
+	width: 218px;
+	height: 41px;
+	float: left;	
+}
+
+#footer #appName {
+	font: bold 10px verdana;
+	margin: 15px 0 0 5px;
+	float: left;
+}
+
+#footer #date {
+	font: bold 10px verdana;
+	color: #6C70C5;
+	margin: 15px 0 0 65px;
+	float: left;
+}
+
+#footer #helpDesk {
+	font: bold 10px verdana;
+	color: #000;
+	margin: 15px 0 0 48px;
+	float: left;
+}
+
+/*********************************************************************************
+## FORMS
+*********************************************************************************/
+input {
+	font: 11px verdana;
+	color: #000;
+}
+
+.form138 {
+	width: 138px;
+}
+
+/*********************************************************************************
+## ALIGNMENT
+*********************************************************************************/
+.alignLeft {
+	text-align: left;
+}
+
+.alignCenter {
+	text-align: center;
+}
+
+.alignRight {
+	text-align: right;
+}

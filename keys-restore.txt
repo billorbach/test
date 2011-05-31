@@ -1,0 +1,3 @@
+#append this command to Esxi server in     /var/spool/cron/crontabs/root
+
+@reboot /bin/mkdir "/.ssh"; /bin/cp "/scratch/keys/authorized_keys"  "/.ssh/" &

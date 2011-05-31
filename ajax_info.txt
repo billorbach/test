@@ -1,0 +1,2 @@
+this is the text
+	<img src="images/firefox.jpg"  height="200" width="200" />

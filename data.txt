@@ -1,0 +1,10 @@
+Name
+Datastore
+Version 7
+Guest OS
+Processors
+Memory Size
+NIC - VM Network, VMXNET
+lsilogic
+Use existing VD
+

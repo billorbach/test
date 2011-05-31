@@ -1,0 +1,15 @@
+iIn general, if there is a problem, the first thing to check is whether jeos or www-data
+can log on to the esxi server without a password.
+Esxi deletes the .ssh directory on rebooting which means all scripts will fail to run
+since they will need a password. if that is the case, you will have to use keygen
+again or copy the files from a directory which has not been deleted such as /vmfs/volumes/Storage/..ssh
+
+Problem that ESXI server sees the configuration of the clones differently than what we see on disk and this leads to all
+sorts of mismatches. So modified web-create-clone1.sh and web-edit-master2.sh so that they unregister the clones before modifying their *.vmx
+files and then reregister them and restart them if they have been running. This may mess up the id which may then mess up the controller program.
+
+In order to prevent the error with the clone not getting the right version of the master vmdk after edit or create master, we need to make sure that when
+we click edit setting and check the version, we must make sure to hit cancel, not okay. When you hit okay, it rewrites the vmx file with the wrong version
+number. So always hit cancel after edit settings.
+
+

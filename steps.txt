@@ -1,0 +1,42 @@
+Create Master:
+
+We use nginx as our web server.
+* are user tasks.
+
+*1. Upload ISO file to the server through HTTP
+*2. Choose operating system version.
+3. Power off and unregister old master
+4. Create VMX file for new master
+5. Copy ISO file to ESXI server
+6. Copy VMX file to ESXI server
+7. Generate VMDK file
+8. Register new VM
+9. Power on new VM
+*10. Download VNC
+*11. Install VNC
+*12. Use VNC to install Windows
+*13. Enable Remote Access to new master
+*14. Install VM tools
+15. Power off master
+16. Power off old clones
+17. Unregister old clones
+18. Delete old clones
+19. Create VMX file
+20. Copy to ESXI server
+21. Register Clone
+22. Power on Clone.
+
+Edit Master:
+1. Power off OldMaster if on.
+2. Power On new master
+*3. Use Remote Access to modify new master
+4. Point clones to new master when they are not in use.
+
+Can we use another method to upload files to the server?
+Can we use another protocol instead of VNC?
+Can we use quick install to install windows?
+
+
+
+
+

@@ -1,0 +1,128 @@
+
+<style type="text/css">
+.header-bg {
+	left: 0px;
+	position:absolute;
+	border:0;
+	z-index:1;	
+	top: 0px;
+	visibility: visible;
+}
+
+.panel-bg {
+	position:absolute;
+	background-repeat:repeat-x;
+	border:0
+	z-index:2;
+	left: 0px;
+	top: 0px;
+	visibility: visible;
+}
+
+.body-bg {
+	position:absolute;
+	background-repeat:repeat-x;
+	border:0
+	z-index:3;
+	left: 0px;
+	top: 0px;
+	visibility: visible;
+}
+
+.foot-bg {
+	position:absolute;
+	background-repeat:repeat-x;
+	border:0
+	z-index:4;
+	left: 0px;
+	top: 0px;
+	visibility: visible;
+}
+
+.panel-font {
+	font-family: Century Gothic;
+	color:#FFF;	
+	font-size:22px;
+	width: 90px;
+	height:25px;	
+	text-decoration: none;	
+	font-weight:bold;
+}
+
+a:link {color: white} 
+a:hover {color: black; text-decoration:underline;} 
+
+.panel_products{
+	position:absolute;
+	border:0	
+	
+	top: 0px;
+	z-index:5;
+	left: 50px;
+	height: 0;
+}
+
+.panel_partners{
+	position:absolute;
+	border:0
+	z-index:6;
+	left: 35%;
+	top: 0px;
+}
+
+.panel_support{
+	position:absolute;
+	border:0
+	z-index:7;
+	left: 65%;
+	top: 0px;
+}
+.panel_aboutus{
+	position:absolute;
+	border:0
+	z-index:8;
+	left: 65%;
+	top: 0px;
+	text-align:left;
+}
+.panel_contact{
+	position:absolute;
+	border:0
+	z-index:9;
+	left: 82%;
+	top: 0px;
+	text-align:left;
+}
+
+.logo{
+	position:absolute;
+	background-color:transparent;
+	border:0;
+	top:14px;
+	left:45px;
+	float:left;
+	visibility: visible;
+	z-index: 10;
+	}
+
+.email{
+	position:relative;
+	background-color:transparent;
+	border:0;
+	top:0px;
+	left:70%;
+	float:left;
+	visibility: visible;
+	z-index: 10;
+	}
+
+.white-body{
+	position:absolute;
+	background-color:transparent;
+	border:0;
+	top:555px;
+	visibility: visible;
+	z-index: 3;
+	}		
+	
+</style>

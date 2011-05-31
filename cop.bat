@@ -1,0 +1,1 @@
+xcopy * \nginx\html\ajax
